@@ -1,40 +1,178 @@
-# Zorvyn - Finance Dashboard UI
+````md id="pro1"
+# 💼 Zorvyn – Finance Dashboard UI
 
-A clean, responsive, and interactive finance dashboard to track financial activities and insights.
+A modern, responsive, and interactive finance dashboard designed to help users track financial activities, analyze spending patterns, and gain actionable insights.
 
-## Overview of Approach
+---
 
-To build this modern finance dashboard, I focused on a glassmorphic aesthetic to create depth and emphasis while maintaining high readability. I adopted the `React + Vite` stack along with raw CSS to ensure maximum design control without the overhead of heavy styling frameworks unless explicitly requested. I used `recharts` to render beautiful and responsive interactive charts for data visualization. State is managed locally combined with the Context API, providing a seamless data flow throughout the application structure while avoiding heavy state management libraries, in favor of a lean setup. Custom styling includes full dark/light mode integration using CSS variables and persistence using `localStorage`.
+## 📌 Overview
 
-## Features
+Zorvyn is a frontend-focused finance dashboard built to demonstrate:
 
-- **Dashboard Overview**: Get a bird's eye view of total balances, incomes, and expenses. Includes Cash Flow Line Charts and Category Expense Pie Charts.
-- **Transactions Management**: Includes searching by description and filtering by transaction type (Income vs Expense). 
-- **Role-Based Access Control Simulation**: Switch between "Viewer" (Read-only data viewing) and "Admin" (Add new transactions or delete existing ones).
-- **Intelligent Insights**: Automatically highlights your topmost spending category on the main overview.
-- **Dark & Light Mode**: Switch between themes seamlessly with CSS variables.
-- **Local Storage Persistence**: Your data states (like custom transactions and theme preference) are safely persisted in the browser.
+- Clean and intuitive UI/UX design
+- Structured component architecture
+- Effective state management
+- Data visualization techniques
+- Role-based UI behavior simulation
 
-## Setup Instructions
+The application is not dependent on any backend and uses mock or static data to simulate real-world financial tracking.
 
-Ensure you have Node.js installed, then run the following commands in the terminal:
+---
 
-1. Install dependencies:
-```bash
+## 🧠 Approach
+
+This project was developed with a strong emphasis on:
+
+- **Modular and scalable architecture** using React components  
+- **Context-based state management** for efficient data flow  
+- **Reusable UI components** for maintainability  
+- **Clean and minimal design principles** for better user experience  
+- **Glassmorphism-inspired UI design** for modern aesthetics  
+- **Data visualization** using responsive charts  
+
+All data handling is performed on the frontend, ensuring simplicity and focus on UI logic.
+
+---
+
+## ✨ Features
+
+### 📊 Dashboard Overview
+- Summary cards:
+  - Total Balance  
+  - Income  
+  - Expenses  
+- Time-based visualization (Cash flow trend chart)  
+- Categorical visualization (Spending breakdown chart)  
+
+### 💳 Transactions Management
+- Transaction list with:
+  - Date  
+  - Amount  
+  - Category  
+  - Type (Income / Expense)  
+- Search functionality  
+- Filtering by transaction type  
+- Clean and structured data presentation  
+
+### 👤 Role-Based UI (Simulation)
+- **Viewer Role**: Read-only access  
+- **Admin Role**: Add and delete transactions  
+- Role switching via UI toggle/dropdown  
+
+### 💡 Insights Section
+- Highlights:
+  - Highest spending category  
+  - Monthly comparisons  
+- Provides quick financial insights from available data  
+
+### 🌗 Theme Support
+- Light and Dark mode  
+- Smooth UI transitions  
+- Theme persistence using `localStorage`  
+
+### 💾 Data Persistence
+- User preferences (theme, transactions) stored locally  
+- Ensures data remains after page reload  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend Framework**: React (Vite)  
+- **Language**: TypeScript  
+- **Styling**: Vanilla CSS (Variables, Flexbox, Grid)  
+- **Charts**: Recharts  
+- **Icons**: Lucide React  
+- **State Management**: React Context API + Local State  
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash id="pro2"
+git clone https://github.com/your-username/zorvyn-finance-dashboard.git
+````
+
+### 2️⃣ Navigate to Project Directory
+
+```bash id="pro3"
+cd zorvyn-finance-dashboard
+```
+
+### 3️⃣ Install Dependencies
+
+```bash id="pro4"
 npm install
 ```
 
-2. Start the local development server:
-```bash
+### 4️⃣ Run the Development Server
+
+```bash id="pro5"
 npm run dev
 ```
 
-3. Open your browser and navigate to the local server address provided (usually `http://localhost:5173/`).
+### 5️⃣ Open in Browser
 
-## Stack
+```
+http://localhost:5173/
+```
 
-- **Framework**: React 18+ (Vite Template)
-- **Styling**: Vanilla CSS (Variables, Grid, Flexbox, Glassmorphism utilities)
-- **Icons**: Lucide React
-- **Charting**: Recharts
-- **Language**: TypeScript
+---
+
+## 📁 Project Structure
+
+```id="pro6"
+src/
+├── components/       # Reusable UI components
+├── pages/            # Application pages/views
+├── context/          # Global state management
+├── data/             # Mock data
+├── styles/           # CSS and theming
+├── App.tsx           # Root component
+└── main.tsx          # Entry point
+```
+
+---
+
+## 🎯 Key Highlights
+
+* Clean and maintainable code structure
+* Fully responsive design
+* Role-based UI behavior simulation
+* Real-time data interaction (frontend state)
+* Strong focus on UI/UX principles
+* Effective use of charts for data insights
+
+---
+
+## 🚀 Future Enhancements
+
+* Backend API integration
+* Authentication and authorization system
+* Advanced analytics and filtering
+* Data export (CSV / JSON)
+* Performance optimizations
+* Enhanced animations and micro-interactions
+
+---
+
+## 📸 Screenshots
+
+*(Add relevant screenshots here to showcase the UI)*
+
+---
+
+## 👨‍💻 Author
+
+**A.U.M. Ahsan**
+BICT (Hons) Undergraduate
+Frontend Developer | MERN Stack Enthusiast
+
+---
+
+## 📜 License
+
+This project is developed for academic and evaluation purposes.
+
