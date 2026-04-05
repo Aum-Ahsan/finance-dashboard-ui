@@ -147,23 +147,6 @@ src/
 
 ---
 
-## 🚀 Future Enhancements
-
-* Backend API integration
-* Authentication and authorization system
-* Advanced analytics and filtering
-* Data export (CSV / JSON)
-* Performance optimizations
-* Enhanced animations and micro-interactions
-
----
-
-## 📸 Screenshots
-
-*(Add relevant screenshots here to showcase the UI)*
-
----
-
 ## 👨‍💻 Author
 
 **A.U.M. Ahsan**
