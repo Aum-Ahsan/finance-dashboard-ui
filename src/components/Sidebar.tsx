@@ -17,7 +17,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ onNav, currentView }) => {
           <div style={{ background: 'var(--accent)', color: 'white', padding: '0.5rem', borderRadius: '8px' }}>
             <Database size={24} />
           </div>
-          <h1 style={{ fontSize: '1.25rem', color: 'var(--text-main)', letterSpacing: '-0.025em' }}>Zorvyn</h1>
+          <h1 style={{ fontSize: '1.25rem', color: 'var(--text-main)', letterSpacing: '-0.025em' }}>Zorvyn Finance Hub</h1>
         </div>
 
         <nav className="sidebar-nav">

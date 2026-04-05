@@ -22,13 +22,16 @@ export const DashboardProvider: React.FC<{ children: React.ReactNode }> = ({ chi
     return saved ? JSON.parse(saved) : mockTransactions;
   });
   const [role, setRole] = useState<Role>('viewer');
-  const [theme, setTheme] = useState<'light' | 'dark'>('dark');
+  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
+    return (localStorage.getItem('dashboard_theme') as 'light' | 'dark') || 'light';
+  });
 
   useEffect(() => {
     localStorage.setItem('dashboard_transactions', JSON.stringify(transactions));
   }, [transactions]);
 
   useEffect(() => {
+    localStorage.setItem('dashboard_theme', theme);
     document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
 
